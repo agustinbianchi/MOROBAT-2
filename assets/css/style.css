@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
+  border: solid 2px #1A3755;
 }
 .back-to-top i {
   font-size: 28px;
@@ -57,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #21df41;
+  background: #FEE606;
   color: #fff;
 }
 .back-to-top.active {
