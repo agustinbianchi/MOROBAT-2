@@ -643,10 +643,6 @@ section {
   .reciclaje-ult {
     justify-content: center;
   }
-  .corrido {
-    position: unset;
-    right: 0px;
-  }
 }
 /*--------------------------------------------------------------
 # Services
@@ -672,8 +668,8 @@ section {
   display: inline-flex;
 }
 .corrido {
-  position: relative;
-  right: 100px;
+  display: flex;
+  justify-content: flex-end;
 }
 .cajita {
   box-shadow: grey 5px 4px 8px 0px;
@@ -787,6 +783,11 @@ section {
 }
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
+}
+@media (max-width: 992px) {
+  .corrido {
+    justify-content: center;
+  }
 }
 /*--------------------------------------------------------------
 # INFORMACIÓN
@@ -915,7 +916,7 @@ padding-right: 0px;
 # BANNER REDES
 --------------------------------------------------------------*/
 #banner-redes {
-  padding-left: 30px;
+  padding-left: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
@@ -924,6 +925,7 @@ padding-right: 0px;
 @media (max-width: 992px) {
   #banner-redes {
     text-align: center;
+    padding-left:0;
   }
   .redes {
     margin-top: 20px;
@@ -1103,39 +1105,49 @@ padding-right: 0px;
 }
 
 /*--------------------------------------------------------------
-# About Us
+# NOSOTROS
 --------------------------------------------------------------*/
-.about-us .content h2 {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 60px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+.txt-nosotros {
+  color: #1A3755;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 50px;
+  text-align: justify;
 }
-.about-us .content h3 {
-  font-weight: 500;
-  line-height: 32px;
-  font-size: 24px;
+.separador-bat {
+  width: 100%;
+  background: url("../img/grad.png");
+  height: 80px;
 }
-.about-us .content ul {
-  list-style: none;
-  padding: 0;
+.texto-sep-nos-1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
 }
-.about-us .content ul li {
-  padding: 10px 0 0 28px;
+.texto-sep-nos-2 {
+  color: #FEE606;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
   position: relative;
+  bottom: 15px;
 }
-.about-us .content ul i {
-  left: 0;
-  top: 7px;
-  position: absolute;
-  font-size: 20px;
-  color: white;
+@media (max-width: 992px) {
+  .separador-bat {
+    height: auto;
+  }
+  .txt-nosotros {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .texto-sep-nos-1 {
+    font-size: 30px;
+  }
+  .texto-sep-nos-2 {
+    font-size: 30px;
+  }
 }
-.about-us .content p:last-child {
-  margin-bottom: 0;
-}
-
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
